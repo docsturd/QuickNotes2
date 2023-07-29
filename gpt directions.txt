@@ -1,0 +1,61 @@
+As a expert python programmer designer using the modified code provided: instead creating a pdf file make a text file.
+
+    provider_name
+    business_info 
+    business_address 
+    city, state zip_code
+    phone_number
+
+As a expert python programer designer the class CreatePatientPopup(QDialog):  the class should look like a be able to perform the following.
+
+the gui popup screen should be split into 2 columns  
+The right column should contain the fields last_name, first_name, date_of_birth, patient_id, gender, notice, special_note. 
+the left column should align all item vertically. 
+in the left column radio buttons, "Name" and "Patient Id #" are contained in their own box titled Sort By. 
+below sort by box is a "go to the beginning of list tool button", "go back one in list tool button", "go forward one in list tool button", "go to end of list toolbutton".  
+Next is a searchable list box.  list box is entry is contoled by the radio buttons. list box display closest match. 
+	feilds in right column should populate data related to item show list box. 
+	list box sorts all items in json file in acending by last_name then by first_name or by Patient Id # depending on radio button selected.  
+	tool buttons should advance though the list as indicated.
+	record feilds can be changed and are updated in real time
+
+Next a series of buttons contained in there own box titled in bold "Patient".  the buttons are  Add, Delete.
+	Add button clears feilds in preperation to add new data.  Once Last name is created and feild is no longer active, a record is created. all other field may be edited in real time
+	Delete button requires verification to delete current record and a secondary verifcation of typing the word "Delete"
+	
+following the Patient container is a series of buttons "Patient Notes", "Preferances", 
+
+
+
+	Patient Notes button open popup.
+	Preferance opens a popup
+	
+mdi.chevron-left-box	       
+mdi.chevron-left-box-outline   
+mdi.chevron-right-box-outline 
+mdi.chevron-right-box       
+
+ph.caret-double-left-fill
+ph.caret-left-fill
+ph.caret-right-fill
+mdi.chevron-right-box   
+
+
+As a expert python programer create a new class SeachEditDeletePopup(QDialog):.  Use CreatePatientPopup(QDialog): as a referance.  SeachEditDeletePopup(QDialog) should include QLineEdit() ,  QTableWidget to include column lables instead of QListWidget,  Include Personal Details, OtherDetails, and put the Apply Changes, Delete Record, and Cancel in one row across the bottom.
+
+As a expert python programmer designer using the previous class provided:  the class should look like a be able to perform the following.
+
+	divide the gui screen into 2 columns with the narrower column on the left. put the following in the left column QLineEdit() ,  QTableWidget, Save,  Apply Changes renamed to Edit, Delete, Cancel
+	
+	
+	Include Personal Details, OtherDetails, and put the Apply Changes, Delete Record, and Cancel in one row across the bottom.
+
+
+As a expert python programmer designer using the previous class provided:  the class should look like a be able to perform the following. 
+	combobox is popuplated with the last_name,  first_name acending order from patients_names.json
+
+As a expert python programmer designer using the previous code provided:  
+	LookAtPatientRecord, CreatePatientPopup, and MainWindow.  
+	demonstrate following changes with enough detail to make modifications easy
+	when a record is selected from LookAtPatientRecord save all json data assocated with that record to a varible.  
+	Then print neatly each that varible data across the top of the MainWindow gui. 	
