@@ -10,9 +10,10 @@ from PyQt5.QtPrintSupport import *
 from qt_material import *
 import qtawesome as qta # qta-browser
 
-from exam.subjective import *
-from exam.objective import *
-# git change made this line more changes.  git change made this line more changes. git change made this line more changes. 
+from Subjective.subjective import *
+from Objective.objective import *
+from Objective.ObjectiveFunctions import *
+# git change made this line more changes.  git change made this line more changes git change made this line more changes. git change made this line more changes. 
 
 
 ###  IMPORTANT FUNCTIONS LOAD AND WRITE  ###
@@ -239,14 +240,14 @@ class CreatePatientPopup(QDialog):
         other_details_layout.addRow("ID:", self.id_input)
 
         # Create patient Notes
-        # Define the patient_notes_names
-        patient_notes_names = ['New Patient Exam', 'Est Patient Exam', 'Soap Note', 'XRay Report', 'Forms']
+        # Define the exam_types
+        exam_types = ['New Patient Exam', 'Est Patient Exam', 'Soap Note', 'XRay Report', 'Forms']
 
         # Create the button grid layout
         patient_notes_button_layout = QGridLayout()
 
-        # Add buttons with names from the patient_notes_names list
-        for i, patient_notes_name in enumerate(patient_notes_names):
+        # Add buttons with names from the exam_types list
+        for i, patient_notes_name in enumerate(exam_types):
             row = i // 2
             column = i % 2
             button = QPushButton(patient_notes_name)
